@@ -8,5 +8,8 @@ Plane.prototype = {
   },
   down: function() {
     this._isFlying = false;
+  },
+  up: function() {
+    this._isFlying = true;
   }
 };
