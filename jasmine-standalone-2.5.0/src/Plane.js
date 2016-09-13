@@ -1,3 +1,5 @@
+// 'use strict';
+
 Plane = function() {
   this._isFlying = true;
 };
