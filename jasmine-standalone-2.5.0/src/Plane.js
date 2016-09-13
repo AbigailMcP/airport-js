@@ -5,5 +5,8 @@ Plane = function() {
 Plane.prototype = {
   isFlying: function() {
     return this._isFlying;
+  },
+  down: function() {
+    this._isFlying = false;
   }
 };

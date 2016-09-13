@@ -21,4 +21,12 @@ describe('Airport', function() {
       expect(plane.down).toHaveBeenCalled();
     });
   });
+
+  describe('plane take off', function() {
+    it('removes a plane from the hangar', function() {
+      airport.land(plane);
+      airport.takeOff(plane);
+      expect(airport.hangar()).not.toContain(plane);
+    });
+  });
 });
