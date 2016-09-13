@@ -8,7 +8,7 @@ describe('Plane', function() {
 
   describe('plane status', function() {
     it('starts in the air', function() {
-      expect(plane.isFlying()).toBeTrue();
+      expect(plane.isFlying()).toEqual(true);
     });
   });
 });
