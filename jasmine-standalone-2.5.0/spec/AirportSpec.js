@@ -8,12 +8,11 @@ describe('Airport', function() {
 
   describe('plane landing', function() {
     it('hangar is empty', function() {
-      expect(airport.hangar()).toBeEmptyArray();
+      expect(airport.hangar()).toEqual([]);
     });
     it('instructes a plane to land', function() {
-      airport.land(plane);
-      expect(airport.hangar()).toContain(plane);
+      airport.land("plane");
+      expect(airport.hangar()).toContain("plane");
     });
   });
-
 });
